@@ -1,0 +1,138 @@
+
+.services-section {
+  padding: 80px 100px;
+  background-color: #f7f9fc;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 30px;
+  flex-wrap: wrap;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.service {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+  max-width: 350px; 
+  margin: 0 auto; 
+}
+
+.service img {
+  width: 80%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.service:hover img {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 1024px) {
+  .services-section {
+    padding: 60px 20px;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .service {
+    width: 80%;
+    margin-bottom: 30px;
+    max-width: 500px; 
+  }
+
+  .service h3 {
+    font-size: 22px;
+  }
+
+  .service p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 50px 20px;
+  }
+
+  .services-section h2 {
+    font-size: 32px;
+  }
+
+  .services-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .service {
+    width: 90%;
+    margin-bottom: 30px;
+    max-width: 400px; 
+  }
+
+  .service h3 {
+    font-size: 20px;
+  }
+
+  .service p {
+    font-size: 14px;
+  }
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

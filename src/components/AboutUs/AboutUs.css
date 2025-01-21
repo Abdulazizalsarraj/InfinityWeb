@@ -1,0 +1,123 @@
+.about-section {
+  padding: 80px 50px;
+  background: linear-gradient(to bottom, #ecf0f1, #bdc3c7);
+  color: #2c3e50;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image-container {
+  flex: 1;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  flex: 1.5;
+  text-align: left;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.about-description {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.about-cta {
+  display: flex;
+  gap: 20px;
+}
+
+.about-button {
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-5px);
+}
+
+.about-secondary-button {
+  padding: 15px 30px;
+  background-color: transparent;
+  color: #3498db;
+  font-size: 18px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.about-secondary-button:hover {
+  background-color: #3498db;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image-container {
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-description {
+    font-size: 18px;
+  }
+
+  .about-cta {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+  

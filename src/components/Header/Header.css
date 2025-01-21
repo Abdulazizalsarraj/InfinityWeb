@@ -1,0 +1,87 @@
+.custom-navbar {
+  background-color: black;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.custom-navbar .container {
+  padding: 0 20px;
+}
+
+.custom-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white !important;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+
+.custom-toggler {
+  border: none;
+  background-color: white !important;
+}
+
+.custom-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%280%2C 0%2C 0%2C 1%29" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E') !important;
+
+}
+
+
+.custom-link {
+  color: white !important;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 15px;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-link:hover {
+  color: #f39c12 !important;
+}
+
+.custom-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #f39c12;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+@media (max-width: 992px) {
+  .custom-link {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+}
+@media (max-width: 768px) {
+  .custom-logo {
+    font-size: 20px;
+  }
+
+  .custom-link {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .custom-navbar .navbar-nav {
+    flex-direction: column;
+  }
+}

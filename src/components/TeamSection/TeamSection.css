@@ -1,0 +1,150 @@
+
+.team-section {
+  padding: 80px 100px;
+  background-color: #f5f5f5;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.team-member {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 80% 50%;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.team-member:hover img {
+  transform: scale(1.1);
+}
+
+.team-member h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #34495e;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #f39c12;
+}
+
+
+@media (max-width: 1024px) {
+  .team-section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .team-member {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-section {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .team-container {
+    flex-direction: column;
+  }
+
+  .team-member {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .team-member h3 {
+    font-size: 20px;
+  }
+
+  .team-member p {
+    font-size: 14px;
+  }
+
+  .social-links a {
+    font-size: 14px;
+  }
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-container, .team-member, .section-title {
+  animation: fadeInUp 1.5s ease-out;
+}
