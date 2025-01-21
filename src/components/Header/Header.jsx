@@ -7,7 +7,7 @@ function Header() {
     <Navbar className="custom-navbar" expand="lg" fixed="top">
       <div className="container">
         <Navbar.Brand href="#hero" className="custom-logo">
-          My Project
+        InfinityWeb
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
         <Navbar.Collapse id="basic-navbar-nav">
